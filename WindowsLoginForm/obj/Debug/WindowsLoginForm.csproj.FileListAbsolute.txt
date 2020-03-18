@@ -1,0 +1,10 @@
+D:\VISUAL_STUDIO\WINDOWS_FORM\WindowsLoginForm\bin\Debug\WindowsLoginForm.exe.config
+D:\VISUAL_STUDIO\WINDOWS_FORM\WindowsLoginForm\bin\Debug\WindowsLoginForm.exe
+D:\VISUAL_STUDIO\WINDOWS_FORM\WindowsLoginForm\bin\Debug\WindowsLoginForm.pdb
+D:\VISUAL_STUDIO\WINDOWS_FORM\WindowsLoginForm\obj\Debug\WindowsLoginForm.Form1.resources
+D:\VISUAL_STUDIO\WINDOWS_FORM\WindowsLoginForm\obj\Debug\WindowsLoginForm.Properties.Resources.resources
+D:\VISUAL_STUDIO\WINDOWS_FORM\WindowsLoginForm\obj\Debug\WindowsLoginForm.csproj.GenerateResource.cache
+D:\VISUAL_STUDIO\WINDOWS_FORM\WindowsLoginForm\obj\Debug\WindowsLoginForm.csproj.CoreCompileInputs.cache
+D:\VISUAL_STUDIO\WINDOWS_FORM\WindowsLoginForm\obj\Debug\WindowsLoginForm.exe
+D:\VISUAL_STUDIO\WINDOWS_FORM\WindowsLoginForm\obj\Debug\WindowsLoginForm.pdb
+D:\VISUAL_STUDIO\WINDOWS_FORM\WindowsLoginForm\obj\Debug\WindowsLoginForm.csprojAssemblyReference.cache
