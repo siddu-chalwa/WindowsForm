@@ -1,0 +1,11 @@
+D:\VISUAL_STUDIO\WINDOWS_FORM\SecondAssignment\bin\Debug\SecondAssignment.exe.config
+D:\VISUAL_STUDIO\WINDOWS_FORM\SecondAssignment\bin\Debug\SecondAssignment.exe
+D:\VISUAL_STUDIO\WINDOWS_FORM\SecondAssignment\bin\Debug\SecondAssignment.pdb
+D:\VISUAL_STUDIO\WINDOWS_FORM\SecondAssignment\obj\Debug\SecondAssignment.csprojAssemblyReference.cache
+D:\VISUAL_STUDIO\WINDOWS_FORM\SecondAssignment\obj\Debug\SecondAssignment.Form1.resources
+D:\VISUAL_STUDIO\WINDOWS_FORM\SecondAssignment\obj\Debug\SecondAssignment.Form2.resources
+D:\VISUAL_STUDIO\WINDOWS_FORM\SecondAssignment\obj\Debug\SecondAssignment.Properties.Resources.resources
+D:\VISUAL_STUDIO\WINDOWS_FORM\SecondAssignment\obj\Debug\SecondAssignment.csproj.GenerateResource.cache
+D:\VISUAL_STUDIO\WINDOWS_FORM\SecondAssignment\obj\Debug\SecondAssignment.csproj.CoreCompileInputs.cache
+D:\VISUAL_STUDIO\WINDOWS_FORM\SecondAssignment\obj\Debug\SecondAssignment.exe
+D:\VISUAL_STUDIO\WINDOWS_FORM\SecondAssignment\obj\Debug\SecondAssignment.pdb
