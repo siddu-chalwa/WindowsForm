@@ -1,0 +1,11 @@
+C:\Users\sidde\source\repos\ThirdAssignment\bin\Debug\ThirdAssignment.exe.config
+C:\Users\sidde\source\repos\ThirdAssignment\bin\Debug\ThirdAssignment.exe
+C:\Users\sidde\source\repos\ThirdAssignment\bin\Debug\ThirdAssignment.pdb
+C:\Users\sidde\source\repos\ThirdAssignment\obj\Debug\ThirdAssignment.csprojAssemblyReference.cache
+C:\Users\sidde\source\repos\ThirdAssignment\obj\Debug\ThirdAssignment.Form1.resources
+C:\Users\sidde\source\repos\ThirdAssignment\obj\Debug\ThirdAssignment.Form2.resources
+C:\Users\sidde\source\repos\ThirdAssignment\obj\Debug\ThirdAssignment.Properties.Resources.resources
+C:\Users\sidde\source\repos\ThirdAssignment\obj\Debug\ThirdAssignment.csproj.GenerateResource.cache
+C:\Users\sidde\source\repos\ThirdAssignment\obj\Debug\ThirdAssignment.csproj.CoreCompileInputs.cache
+C:\Users\sidde\source\repos\ThirdAssignment\obj\Debug\ThirdAssignment.exe
+C:\Users\sidde\source\repos\ThirdAssignment\obj\Debug\ThirdAssignment.pdb
