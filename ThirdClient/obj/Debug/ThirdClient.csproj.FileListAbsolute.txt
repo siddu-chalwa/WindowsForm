@@ -1,0 +1,10 @@
+C:\Users\sidde\source\repos\ThirdClient\bin\Debug\ThirdClient.exe.config
+C:\Users\sidde\source\repos\ThirdClient\bin\Debug\ThirdClient.exe
+C:\Users\sidde\source\repos\ThirdClient\bin\Debug\ThirdClient.pdb
+C:\Users\sidde\source\repos\ThirdClient\obj\Debug\ThirdClient.csprojAssemblyReference.cache
+C:\Users\sidde\source\repos\ThirdClient\obj\Debug\ThirdClient.DisplayForm.resources
+C:\Users\sidde\source\repos\ThirdClient\obj\Debug\ThirdClient.Properties.Resources.resources
+C:\Users\sidde\source\repos\ThirdClient\obj\Debug\ThirdClient.csproj.GenerateResource.cache
+C:\Users\sidde\source\repos\ThirdClient\obj\Debug\ThirdClient.csproj.CoreCompileInputs.cache
+C:\Users\sidde\source\repos\ThirdClient\obj\Debug\ThirdClient.exe
+C:\Users\sidde\source\repos\ThirdClient\obj\Debug\ThirdClient.pdb
