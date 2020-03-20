@@ -1,0 +1,10 @@
+C:\Users\sidde\source\repos\FirstClient\bin\Debug\FirstClient.exe.config
+C:\Users\sidde\source\repos\FirstClient\bin\Debug\FirstClient.exe
+C:\Users\sidde\source\repos\FirstClient\bin\Debug\FirstClient.pdb
+C:\Users\sidde\source\repos\FirstClient\obj\Debug\FirstClient.csprojAssemblyReference.cache
+C:\Users\sidde\source\repos\FirstClient\obj\Debug\FirstClient.Properties.Resources.resources
+C:\Users\sidde\source\repos\FirstClient\obj\Debug\FirstClient.RegistrationForm.resources
+C:\Users\sidde\source\repos\FirstClient\obj\Debug\FirstClient.csproj.GenerateResource.cache
+C:\Users\sidde\source\repos\FirstClient\obj\Debug\FirstClient.csproj.CoreCompileInputs.cache
+C:\Users\sidde\source\repos\FirstClient\obj\Debug\FirstClient.exe
+C:\Users\sidde\source\repos\FirstClient\obj\Debug\FirstClient.pdb
