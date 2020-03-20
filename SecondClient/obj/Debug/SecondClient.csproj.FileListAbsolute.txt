@@ -1,0 +1,11 @@
+C:\Users\sidde\source\repos\SecondClient\bin\Debug\SecondClient.exe.config
+C:\Users\sidde\source\repos\SecondClient\bin\Debug\SecondClient.exe
+C:\Users\sidde\source\repos\SecondClient\bin\Debug\SecondClient.pdb
+C:\Users\sidde\source\repos\SecondClient\obj\Debug\SecondClient.csprojAssemblyReference.cache
+C:\Users\sidde\source\repos\SecondClient\obj\Debug\SecondClient.DisplayForm.resources
+C:\Users\sidde\source\repos\SecondClient\obj\Debug\SecondClient.RegistrationForm.resources
+C:\Users\sidde\source\repos\SecondClient\obj\Debug\SecondClient.Properties.Resources.resources
+C:\Users\sidde\source\repos\SecondClient\obj\Debug\SecondClient.csproj.GenerateResource.cache
+C:\Users\sidde\source\repos\SecondClient\obj\Debug\SecondClient.csproj.CoreCompileInputs.cache
+C:\Users\sidde\source\repos\SecondClient\obj\Debug\SecondClient.exe
+C:\Users\sidde\source\repos\SecondClient\obj\Debug\SecondClient.pdb
