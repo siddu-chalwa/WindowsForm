@@ -8,3 +8,13 @@ C:\Users\sidde\source\repos\LogIn_SignUp_From\obj\Debug\LogIn_SignUp_From.csproj
 C:\Users\sidde\source\repos\LogIn_SignUp_From\obj\Debug\LogIn_SignUp_From.csproj.CoreCompileInputs.cache
 C:\Users\sidde\source\repos\LogIn_SignUp_From\obj\Debug\LogIn_SignUp_From.exe
 C:\Users\sidde\source\repos\LogIn_SignUp_From\obj\Debug\LogIn_SignUp_From.pdb
+C:\Users\sidde\source\repos\WindowsForm-master\WindowsForm-master\LogIn_SignUp_From\bin\Debug\LogIn_SignUp_From.exe.config
+C:\Users\sidde\source\repos\WindowsForm-master\WindowsForm-master\LogIn_SignUp_From\bin\Debug\LogIn_SignUp_From.exe
+C:\Users\sidde\source\repos\WindowsForm-master\WindowsForm-master\LogIn_SignUp_From\bin\Debug\LogIn_SignUp_From.pdb
+C:\Users\sidde\source\repos\WindowsForm-master\WindowsForm-master\LogIn_SignUp_From\obj\Debug\LogIn_SignUp_From.csprojAssemblyReference.cache
+C:\Users\sidde\source\repos\WindowsForm-master\WindowsForm-master\LogIn_SignUp_From\obj\Debug\LogIn_SignUp_From.LogIn_SignUp_Window.resources
+C:\Users\sidde\source\repos\WindowsForm-master\WindowsForm-master\LogIn_SignUp_From\obj\Debug\LogIn_SignUp_From.Properties.Resources.resources
+C:\Users\sidde\source\repos\WindowsForm-master\WindowsForm-master\LogIn_SignUp_From\obj\Debug\LogIn_SignUp_From.csproj.GenerateResource.cache
+C:\Users\sidde\source\repos\WindowsForm-master\WindowsForm-master\LogIn_SignUp_From\obj\Debug\LogIn_SignUp_From.csproj.CoreCompileInputs.cache
+C:\Users\sidde\source\repos\WindowsForm-master\WindowsForm-master\LogIn_SignUp_From\obj\Debug\LogIn_SignUp_From.exe
+C:\Users\sidde\source\repos\WindowsForm-master\WindowsForm-master\LogIn_SignUp_From\obj\Debug\LogIn_SignUp_From.pdb

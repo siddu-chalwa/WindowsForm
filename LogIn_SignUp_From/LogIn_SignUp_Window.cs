@@ -47,6 +47,8 @@ namespace LogIn_SignUp_From
                 salary_textbox.Visible = true;
                 signup_button.Visible = true;
                 login_button.Visible = false;
+                password_textbox.PasswordChar = '\0';
+
             }
             else
             {
@@ -58,6 +60,7 @@ namespace LogIn_SignUp_From
                 salary_textbox.Visible = false;
                 signup_button.Visible = false;
                 login_button.Visible = true;
+                password_textbox.PasswordChar = 'x';
             }
         }
         /// <summary>
@@ -93,44 +96,9 @@ namespace LogIn_SignUp_From
             bool error = true;
             try
             {
-                ///
-                // emailid validation
-                ///
-                if (string.IsNullOrWhiteSpace(emailid_textbox.Text))
-                {
-                    emailid_T_errorProvider.SetError(emailid_textbox, "enter emailid");
-                    emailid_textbox.Focus();
-                    error = false;
-                    return;
-                }
-                if (!(Regex.IsMatch(emailid_textbox.Text, @"^[a-z]+\.[a-z]+@[a-z]+\.[a-z]{2,4}$")))
-                {
-                    emailid_T_errorProvider.SetError(emailid_textbox, "Format: firstName.lastName@orgnization.domain");
-                    emailid_textbox.Focus();
-                    error = false;
-                    return;
-                }
-                emailid_T_errorProvider.Clear();
+                RuntimeEmailValidation(this, e);
                 password_textbox.Focus();
-
-                ///
-                // password validation
-                ///
-                if (string.IsNullOrWhiteSpace(password_textbox.Text))
-                {
-                    password_T_errorProvider.SetError(password_textbox, "enter password");
-                    password_textbox.Focus();
-                    error = false;
-                    return;
-                }
-                if (!(Regex.IsMatch(password_textbox.Text, @"^([@$#^&\*\-\]\.,\)\( }[|\\{])?\w+(([@$# ^&*_\-\]\.,\)\(}[|\\{])*)([a-zA-Z]+)$")))
-                {
-                    password_T_errorProvider.SetError(password_textbox, "Format: min: 8 max:22 characters\n1. optional: special character - only 1\n2. a-z A-Z _\n3. special characters\n4. alphabet character");
-                    password_textbox.Focus();
-                    error = false;
-                    return;
-                }
-                password_T_errorProvider.Clear();
+                RuntimePasswordValidation(this, e);
 
                 if (new ClassInteractingToDB().RetrivingDataFromDB(emailid_textbox.Text, password_textbox.Text))
                 {
@@ -165,75 +133,14 @@ namespace LogIn_SignUp_From
             bool error = true;
             try
             {
-                ///
-                // emailid validation
-                ///
-                if (string.IsNullOrWhiteSpace(emailid_textbox.Text))
-                {
-                    emailid_T_errorProvider.SetError(emailid_textbox, "enter emailid");
-                    emailid_textbox.Focus();
-                    error = false;
-                    return;
-                }
-                if (!(Regex.IsMatch(emailid_textbox.Text, @"^[a-z]+\.[a-z]+@[a-z]+\.[a-z]{2,4}$")))
-                {
-                    emailid_T_errorProvider.SetError(emailid_textbox, "Format: firstName.lastName@orgnization.domain");
-                    emailid_textbox.Focus();
-                    error = false;
-                    return;
-                }
-                emailid_T_errorProvider.Clear();
+                RuntimeEmailValidation(this, e);
                 password_textbox.Focus();
 
-                ///
-                // password validation
-                ///
-                if (string.IsNullOrWhiteSpace(password_textbox.Text))
-                {
-                    password_T_errorProvider.SetError(password_textbox, "enter password");
-                    password_textbox.Focus();
-                    error = false;
-                    return;
-                }
-                if (!(Regex.IsMatch(password_textbox.Text, @"^([@$#^&\*\-\]\.,\)\( }[|\\{])?\w+(([@$# ^&*_\-\]\.,\)\(}[|\\{])*)([a-zA-Z]+)$")))
-                {
-                    password_T_errorProvider.SetError(password_textbox, "Format: min: 8 max:22 characters\n1. optional: special character - only 1\n2. a-z A-Z _\n3. special characters\n4. alphabet character");
-                    password_textbox.Focus();
-                    error = false;
-                    return;
-                }
-                password_T_errorProvider.Clear();
+                RuntimePasswordValidation(this, e);
 
-                ///
-                // name validation
-                ///
-                if (string.IsNullOrWhiteSpace(name_textbox.Text))
-                {
-                    name_T_errorProvider.SetError(name_textbox, "enter name");
-                    name_textbox.Focus();
-                    error = false;
-                    return;
-                }
-                if (!(Regex.IsMatch(name_textbox.Text, @"^(_?)([a-zA-Z]+)([ _.-]?)(([a-zA-Z]+)?)$")))
-                {
-                    name_T_errorProvider.SetError(name_textbox, "Format: \n1. optional at begining: _\n2. alphabetical characters\n3. optional: _,  ,-,.\n4. optional: alphabhetical characters");
-                    name_textbox.Focus();
-                    error = false;
-                    return;
-                }
-                if (name_textbox.Text.Length <= 6)
-                {
-                    name_T_errorProvider.SetError(name_textbox, "min 6, max 20  characters allowed");
-                    name_textbox.Focus();
-                    error = false;
-                    return;
-                }
-                name_T_errorProvider.Clear();
+                RuntimeNameValidation(this, e);
                 age_textbox.Focus();
 
-                ///
-                // age validation
-                ///
                 int ageVar;
                 if (string.IsNullOrWhiteSpace(age_textbox.Text))
                 {
@@ -259,9 +166,6 @@ namespace LogIn_SignUp_From
                 age_T_errorProvider.Clear();
                 salary_textbox.Focus();
 
-                ///
-                // salary validation
-                ///
                 int salaryVar;
                 if (string.IsNullOrWhiteSpace(salary_textbox.Text))
                 {
@@ -292,22 +196,79 @@ namespace LogIn_SignUp_From
                     return;
                 }
                 salary_T_errorProvider.Clear();
-                
-                if(new ClassInteractingToDB().WrittingDataToDB(emailid_textbox.Text, password_textbox.Text, name_textbox.Text, ageVar, salaryVar))
+
+                if (new ClassInteractingToDB().WrittingDataToDB(emailid_textbox.Text, password_textbox.Text, name_textbox.Text, ageVar, salaryVar))
                     checkbox.Checked = false;
                 TextboxCleanFunction();
                 emailid_textbox.Focus();
                 error = false;
             }
-            catch (Exception expMsg)
+            catch (Exception)
             {
-                MessageBox.Show("application run into an error: " + expMsg.Message);
+                MessageBox.Show("application run into an error, Sorry for inconvenience");
             }
             finally
             {
                 if (error)
                     this.Close();
             }
+        }
+
+        private void RuntimeEmailValidation(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(emailid_textbox.Text))
+            {
+                emailid_T_errorProvider.SetError(emailid_textbox, "enter emailid");
+                emailid_textbox.Focus();
+                return;
+            }
+            if (!(Regex.IsMatch(emailid_textbox.Text, @"^(?("")("".+?(?<!\\)""@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))" + @"(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-0-9a-z]*[0-9a-z]*\.)+[a-z0-9][\-a-z0-9]{0,22}[a-z0-9]))$")))
+            {
+                emailid_T_errorProvider.SetError(emailid_textbox, "Invalid User ID");
+                emailid_textbox.Focus();
+                return;
+            }
+            emailid_T_errorProvider.Clear();
+        }
+
+        private void RuntimeNameValidation(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(name_textbox.Text))
+            {
+                name_T_errorProvider.SetError(name_textbox, "enter name");
+                name_textbox.Focus();
+                return;
+            }
+            if (!(Regex.IsMatch(name_textbox.Text, @"^(_?)([a-zA-Z]+)([ _.-]?)(([a-zA-Z]+)?)$")))
+            {
+                name_T_errorProvider.SetError(name_textbox, "Format: \n1. optional at begining: _\n2. alphabetical characters\n3. optional: _,  ,-,.\n4. optional: alphabhetical characters");
+                name_textbox.Focus();
+                return;
+            }
+            if (name_textbox.Text.Length <= 6)
+            {
+                name_T_errorProvider.SetError(name_textbox, "min 6, max 20  characters allowed");
+                name_textbox.Focus();
+                return;
+            }
+            name_T_errorProvider.Clear();
+        }
+
+        private void RuntimePasswordValidation(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(password_textbox.Text))
+            {
+                password_T_errorProvider.SetError(password_textbox, "enter password");
+                password_textbox.Focus();
+                return;
+            }
+            if (!(Regex.IsMatch(password_textbox.Text, @"^([@$#^&\*\-\]\.,\)\( }[|\\{])?\w+(([@$# ^&*_\-\]\.,\)\(}[|\\{])*)([a-zA-Z]+)$")))
+            {
+                password_T_errorProvider.SetError(password_textbox, "Format: min: 8 max:22 characters\n1. optional: special character - only 1\n2. a-z A-Z _\n3. special characters\n4. alphabet character");
+                password_textbox.Focus();
+                return;
+            }
+            password_T_errorProvider.Clear();
         }
     }
 }

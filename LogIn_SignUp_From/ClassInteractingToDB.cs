@@ -75,10 +75,10 @@ namespace LogIn_SignUp_From
             {
                 connection.Open();
                 bool value1, value2;
-                using (SqlCommand command = new SqlCommand("EmailidValidation", connection))
+                using (SqlCommand command = new SqlCommand("EmailidValidation_SP", connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.AddWithValue("@emailid", emailid);
+                    command.Parameters.AddWithValue("@_emailid", emailid);
                     using (SqlDataReader sqlDataReader = command.ExecuteReader())
                     {
                         value1 = sqlDataReader.HasRows;
@@ -86,10 +86,10 @@ namespace LogIn_SignUp_From
                         command.Dispose();
                     }
                 }
-                using (SqlCommand command = new SqlCommand("PasswordValidation", connection))
+                using (SqlCommand command = new SqlCommand("PasswordValidation_SP", connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.AddWithValue("@password", password);
+                    command.Parameters.AddWithValue("@_password", password);
                     using (SqlDataReader sqlDataReader = command.ExecuteReader())
                     {
                         value2 = sqlDataReader.HasRows;

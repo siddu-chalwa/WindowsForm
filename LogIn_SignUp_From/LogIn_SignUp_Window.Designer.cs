@@ -92,6 +92,7 @@
             this.emailid_textbox.Name = "emailid_textbox";
             this.emailid_textbox.Size = new System.Drawing.Size(323, 42);
             this.emailid_textbox.TabIndex = 3;
+            this.emailid_textbox.TextChanged += new System.EventHandler(this.RuntimeEmailValidation);
             this.emailid_textbox.Leave += new System.EventHandler(this.errorProviderClear_EmailT);
             // 
             // password_textbox
@@ -102,6 +103,7 @@
             this.password_textbox.PasswordChar = 'x';
             this.password_textbox.Size = new System.Drawing.Size(323, 42);
             this.password_textbox.TabIndex = 4;
+            this.password_textbox.TextChanged += new System.EventHandler(this.RuntimePasswordValidation);
             this.password_textbox.Leave += new System.EventHandler(this.errorProvider_PasswordT);
             // 
             // checkbox
@@ -164,6 +166,7 @@
             this.name_textbox.Size = new System.Drawing.Size(323, 42);
             this.name_textbox.TabIndex = 10;
             this.name_textbox.Visible = false;
+            this.name_textbox.TextChanged += new System.EventHandler(this.RuntimeNameValidation);
             this.name_textbox.Leave += new System.EventHandler(this.errorProvide_NameClear);
             // 
             // age_label
