@@ -1,0 +1,3 @@
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at FifthAssignment.ClassInteractingToDB.retrievingDataFormDB(String emailid, String password) in C:\Users\sidde\source\repos\FifthAssignment\ClassInteractingToDB.cs:line 13
+   at FifthAssignment.LoginFormCode.LoginSubmissionButton(Object sender, EventArgs e) in C:\Users\sidde\source\repos\FifthAssignment\LoginFormCode.cs:line 92
