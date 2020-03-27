@@ -1,0 +1,11 @@
+C:\Users\sidde\Desktop\SixthClient\bin\Debug\SixthClient.exe.config
+C:\Users\sidde\Desktop\SixthClient\bin\Debug\SixthClient.exe
+C:\Users\sidde\Desktop\SixthClient\bin\Debug\SixthClient.pdb
+C:\Users\sidde\Desktop\SixthClient\obj\Debug\SixthClient.csprojAssemblyReference.cache
+C:\Users\sidde\Desktop\SixthClient\obj\Debug\SixthClient.ControllerWindowForm.resources
+C:\Users\sidde\Desktop\SixthClient\obj\Debug\SixthClient.Properties.Resources.resources
+C:\Users\sidde\Desktop\SixthClient\obj\Debug\SixthClient.csproj.GenerateResource.cache
+C:\Users\sidde\Desktop\SixthClient\obj\Debug\SixthClient.csproj.CoreCompileInputs.cache
+C:\Users\sidde\Desktop\SixthClient\obj\Debug\SixthClient.exe
+C:\Users\sidde\Desktop\SixthClient\obj\Debug\SixthClient.pdb
+C:\Users\sidde\Desktop\SixthClient\obj\Debug\SixthClient.EntryForm.resources
