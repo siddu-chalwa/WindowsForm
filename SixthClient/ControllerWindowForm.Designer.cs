@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ControllerWindowForm));
             this.groupBox_up = new System.Windows.Forms.GroupBox();
             this.groupBox_DB = new System.Windows.Forms.GroupBox();
             this.label_DPPassword = new System.Windows.Forms.Label();
@@ -75,6 +76,17 @@
             this.errorProvider_passwordS = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider_confirmPassS = new System.Windows.Forms.ErrorProvider(this.components);
             this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
+            this.menuStrip_ControllerWindowFrom = new System.Windows.Forms.MenuStrip();
+            this.lOGINToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.sIGNUPToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pRINTToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.lOGUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aBOUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
+            this.contextMenuStrip_notification = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.eXITToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip_refresh = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.refreshToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox_up.SuspendLayout();
             this.groupBox_DB.SuspendLayout();
             this.groupBox_loginSignup.SuspendLayout();
@@ -91,6 +103,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider_emailidS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider_passwordS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider_confirmPassS)).BeginInit();
+            this.menuStrip_ControllerWindowFrom.SuspendLayout();
+            this.contextMenuStrip_notification.SuspendLayout();
+            this.contextMenuStrip_refresh.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox_up
@@ -102,7 +117,7 @@
             this.groupBox_up.Controls.Add(this.dateTimePicker);
             this.groupBox_up.Controls.Add(this.label_title);
             this.groupBox_up.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox_up.Location = new System.Drawing.Point(0, 0);
+            this.groupBox_up.Location = new System.Drawing.Point(0, 28);
             this.groupBox_up.Name = "groupBox_up";
             this.groupBox_up.Size = new System.Drawing.Size(1023, 100);
             this.groupBox_up.TabIndex = 0;
@@ -423,9 +438,9 @@
             this.groupBox_imageGridView.Controls.Add(this.groupBox_gridForm);
             this.groupBox_imageGridView.Controls.Add(this.pictureBox_image);
             this.groupBox_imageGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox_imageGridView.Location = new System.Drawing.Point(0, 100);
+            this.groupBox_imageGridView.Location = new System.Drawing.Point(0, 128);
             this.groupBox_imageGridView.Name = "groupBox_imageGridView";
-            this.groupBox_imageGridView.Size = new System.Drawing.Size(1023, 246);
+            this.groupBox_imageGridView.Size = new System.Drawing.Size(1023, 218);
             this.groupBox_imageGridView.TabIndex = 2;
             this.groupBox_imageGridView.TabStop = false;
             // 
@@ -436,7 +451,7 @@
             this.groupBox_gridForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox_gridForm.Location = new System.Drawing.Point(3, 18);
             this.groupBox_gridForm.Name = "groupBox_gridForm";
-            this.groupBox_gridForm.Size = new System.Drawing.Size(820, 225);
+            this.groupBox_gridForm.Size = new System.Drawing.Size(820, 197);
             this.groupBox_gridForm.TabIndex = 3;
             this.groupBox_gridForm.TabStop = false;
             this.groupBox_gridForm.Visible = false;
@@ -466,7 +481,7 @@
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowHeadersWidth = 51;
             this.dataGridView.RowTemplate.Height = 24;
-            this.dataGridView.Size = new System.Drawing.Size(814, 204);
+            this.dataGridView.Size = new System.Drawing.Size(814, 176);
             this.dataGridView.TabIndex = 4;
             // 
             // nAMEDataGridViewTextBoxColumn
@@ -532,9 +547,10 @@
             // 
             this.pictureBox_image.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_image.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox_image.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_image.InitialImage")));
             this.pictureBox_image.Location = new System.Drawing.Point(823, 18);
             this.pictureBox_image.Name = "pictureBox_image";
-            this.pictureBox_image.Size = new System.Drawing.Size(197, 225);
+            this.pictureBox_image.Size = new System.Drawing.Size(197, 197);
             this.pictureBox_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_image.TabIndex = 2;
             this.pictureBox_image.TabStop = false;
@@ -567,6 +583,101 @@
             // 
             this.backgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker_DoWork);
             // 
+            // menuStrip_ControllerWindowFrom
+            // 
+            this.menuStrip_ControllerWindowFrom.AllowDrop = true;
+            this.menuStrip_ControllerWindowFrom.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip_ControllerWindowFrom.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lOGINToolStripMenuItem1,
+            this.sIGNUPToolStripMenuItem1,
+            this.pRINTToolStripMenuItem1,
+            this.lOGUTToolStripMenuItem,
+            this.aBOUTToolStripMenuItem});
+            this.menuStrip_ControllerWindowFrom.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip_ControllerWindowFrom.Name = "menuStrip_ControllerWindowFrom";
+            this.menuStrip_ControllerWindowFrom.Size = new System.Drawing.Size(1023, 28);
+            this.menuStrip_ControllerWindowFrom.TabIndex = 3;
+            this.menuStrip_ControllerWindowFrom.Text = "Menubar";
+            // 
+            // lOGINToolStripMenuItem1
+            // 
+            this.lOGINToolStripMenuItem1.Name = "lOGINToolStripMenuItem1";
+            this.lOGINToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.L)));
+            this.lOGINToolStripMenuItem1.Size = new System.Drawing.Size(65, 24);
+            this.lOGINToolStripMenuItem1.Text = "LOGIN";
+            this.lOGINToolStripMenuItem1.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
+            // 
+            // sIGNUPToolStripMenuItem1
+            // 
+            this.sIGNUPToolStripMenuItem1.Name = "sIGNUPToolStripMenuItem1";
+            this.sIGNUPToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.sIGNUPToolStripMenuItem1.Size = new System.Drawing.Size(74, 24);
+            this.sIGNUPToolStripMenuItem1.Text = "SIGNUP";
+            this.sIGNUPToolStripMenuItem1.Click += new System.EventHandler(this.signupToolStripMenuItem_Click);
+            // 
+            // pRINTToolStripMenuItem1
+            // 
+            this.pRINTToolStripMenuItem1.Name = "pRINTToolStripMenuItem1";
+            this.pRINTToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.pRINTToolStripMenuItem1.Size = new System.Drawing.Size(98, 24);
+            this.pRINTToolStripMenuItem1.Text = "SAVE DATA";
+            this.pRINTToolStripMenuItem1.Visible = false;
+            this.pRINTToolStripMenuItem1.Click += new System.EventHandler(this.pRINTToolStripMenuItem1_Click);
+            // 
+            // lOGUTToolStripMenuItem
+            // 
+            this.lOGUTToolStripMenuItem.Name = "lOGUTToolStripMenuItem";
+            this.lOGUTToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.L)));
+            this.lOGUTToolStripMenuItem.Size = new System.Drawing.Size(79, 24);
+            this.lOGUTToolStripMenuItem.Text = "LOGOUT";
+            this.lOGUTToolStripMenuItem.Visible = false;
+            this.lOGUTToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
+            // 
+            // aBOUTToolStripMenuItem
+            // 
+            this.aBOUTToolStripMenuItem.Name = "aBOUTToolStripMenuItem";
+            this.aBOUTToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
+            this.aBOUTToolStripMenuItem.Text = "ABOUT";
+            this.aBOUTToolStripMenuItem.Click += new System.EventHandler(this.aBOUTToolStripMenuItem_Click);
+            // 
+            // notifyIcon
+            // 
+            this.notifyIcon.ContextMenuStrip = this.contextMenuStrip_notification;
+            this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
+            this.notifyIcon.Text = "Diebold Nixdorf";
+            this.notifyIcon.Visible = true;
+            // 
+            // contextMenuStrip_notification
+            // 
+            this.contextMenuStrip_notification.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip_notification.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.eXITToolStripMenuItem});
+            this.contextMenuStrip_notification.Name = "contextMenuStrip_notification";
+            this.contextMenuStrip_notification.Size = new System.Drawing.Size(108, 28);
+            // 
+            // eXITToolStripMenuItem
+            // 
+            this.eXITToolStripMenuItem.Name = "eXITToolStripMenuItem";
+            this.eXITToolStripMenuItem.Size = new System.Drawing.Size(107, 24);
+            this.eXITToolStripMenuItem.Text = "EXIT";
+            this.eXITToolStripMenuItem.Click += new System.EventHandler(this.eXITToolStripMenuItem_Click);
+            // 
+            // contextMenuStrip_refresh
+            // 
+            this.contextMenuStrip_refresh.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip_refresh.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.refreshToolStripMenuItem1});
+            this.contextMenuStrip_refresh.Name = "contextMenuStrip_refresh";
+            this.contextMenuStrip_refresh.Size = new System.Drawing.Size(128, 28);
+            // 
+            // refreshToolStripMenuItem1
+            // 
+            this.refreshToolStripMenuItem1.Name = "refreshToolStripMenuItem1";
+            this.refreshToolStripMenuItem1.Size = new System.Drawing.Size(127, 24);
+            this.refreshToolStripMenuItem1.Text = "Refresh";
+            this.refreshToolStripMenuItem1.Click += new System.EventHandler(this.rEFRESHToolStripMenuItem_Click);
+            // 
             // ControllerWindowForm
             // 
             this.AllowDrop = true;
@@ -575,9 +686,12 @@
             this.AutoScroll = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1023, 762);
+            this.ContextMenuStrip = this.contextMenuStrip_refresh;
             this.Controls.Add(this.groupBox_imageGridView);
             this.Controls.Add(this.groupBox_loginSignup);
             this.Controls.Add(this.groupBox_up);
+            this.Controls.Add(this.menuStrip_ControllerWindowFrom);
+            this.MainMenuStrip = this.menuStrip_ControllerWindowFrom;
             this.Name = "ControllerWindowForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Controller Window Form";
@@ -602,7 +716,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider_emailidS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider_passwordS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider_confirmPassS)).EndInit();
+            this.menuStrip_ControllerWindowFrom.ResumeLayout(false);
+            this.menuStrip_ControllerWindowFrom.PerformLayout();
+            this.contextMenuStrip_notification.ResumeLayout(false);
+            this.contextMenuStrip_refresh.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -654,6 +773,17 @@
         private System.Windows.Forms.Label label_DPPassword;
         private System.Windows.Forms.ComboBox comboBox;
         private System.ComponentModel.BackgroundWorker backgroundWorker;
+        private System.Windows.Forms.MenuStrip menuStrip_ControllerWindowFrom;
+        private System.Windows.Forms.ToolStripMenuItem lOGINToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem sIGNUPToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem pRINTToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem lOGUTToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aBOUTToolStripMenuItem;
+        private System.Windows.Forms.NotifyIcon notifyIcon;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip_notification;
+        private System.Windows.Forms.ToolStripMenuItem eXITToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip_refresh;
+        private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem1;
     }
 }
 

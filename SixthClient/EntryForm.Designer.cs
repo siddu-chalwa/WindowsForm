@@ -44,6 +44,8 @@
             this.errorProvider_age = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider_salary = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider_contactNo = new System.Windows.Forms.ErrorProvider(this.components);
+            this.button_uploadimg = new System.Windows.Forms.Button();
+            this.openFileDialog_imageUpload = new System.Windows.Forms.OpenFileDialog();
             this.groupBox_signup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider_name)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider_age)).BeginInit();
@@ -54,6 +56,7 @@
             // groupBox_signup
             // 
             this.groupBox_signup.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.groupBox_signup.Controls.Add(this.button_uploadimg);
             this.groupBox_signup.Controls.Add(this.textBox_ContactNo);
             this.groupBox_signup.Controls.Add(this.label_mobileNo);
             this.groupBox_signup.Controls.Add(this.textBox_salary);
@@ -196,6 +199,24 @@
             // 
             this.errorProvider_contactNo.ContainerControl = this;
             // 
+            // button_uploadimg
+            // 
+            this.button_uploadimg.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button_uploadimg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_uploadimg.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_uploadimg.ForeColor = System.Drawing.Color.SeaGreen;
+            this.button_uploadimg.Location = new System.Drawing.Point(507, 311);
+            this.button_uploadimg.Name = "button_uploadimg";
+            this.button_uploadimg.Size = new System.Drawing.Size(171, 49);
+            this.button_uploadimg.TabIndex = 17;
+            this.button_uploadimg.Text = "upload image";
+            this.button_uploadimg.UseVisualStyleBackColor = true;
+            this.button_uploadimg.Click += new System.EventHandler(this.button_uploadimg_Click);
+            // 
+            // openFileDialog_imageUpload
+            // 
+            this.openFileDialog_imageUpload.FileName = "openFileDialog1";
+            // 
             // EntryForm
             // 
             this.AcceptButton = this.button_submit;
@@ -235,5 +256,7 @@
         private System.Windows.Forms.ErrorProvider errorProvider_age;
         private System.Windows.Forms.ErrorProvider errorProvider_salary;
         private System.Windows.Forms.ErrorProvider errorProvider_contactNo;
+        private System.Windows.Forms.Button button_uploadimg;
+        private System.Windows.Forms.OpenFileDialog openFileDialog_imageUpload;
     }
 }

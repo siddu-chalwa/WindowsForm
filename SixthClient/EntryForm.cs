@@ -1,15 +1,25 @@
-﻿using System;
+﻿using DocumentFormat.OpenXml.Vml;
+using System;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace SixthClient
 {
+    /// <summary>
+    /// class: collecting data from user and passing to ClassInteractingToDB
+    /// </summary>
     public partial class EntryForm : Form
     {
+        /// <summary>
+        /// variables
+        /// </summary>
         private bool[] ErrorVerify = new bool[]{false, false, false, false};
         private string emailid, password;
+        private string imageFile = null;
         private int ageVar, salaryVar;
-
+        /// <summary>
+        /// function: clears the textfield
+        /// </summary>
         private void ClearTextFields()
         {
             textBox_age.Clear();
@@ -17,13 +27,22 @@ namespace SixthClient
             textBox_name.Clear();
             textBox_salary.Clear();
         }
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="emailid"></param>
+        /// <param name="password"></param>
         public EntryForm(string emailid, string password)
         {
             InitializeComponent();
             this.emailid = emailid;
             this.password = password;
         }
-
+        /// <summary>
+        /// event handler: for submit button controller to pass the data entered by user to ClasIteractigTODB
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button_submit_Click(object sender, EventArgs e)
         {
             bool error = false;
@@ -47,7 +66,7 @@ namespace SixthClient
                 }
                 else
                 {
-                    if (new ClassInteractingWithDB().WrittingDataToDB(emailid, password, textBox_name.Text, ageVar, salaryVar, textBox_ContactNo.Text))
+                    if (new ClassInteractingWithDB().WrittingDataToDB(emailid, password, textBox_name.Text, ageVar, salaryVar, textBox_ContactNo.Text, imageFile))
                     {
                         MessageBox.Show("Account Created");
                         ClearTextFields();
@@ -59,10 +78,10 @@ namespace SixthClient
                     }
                 }
             }
-            catch(Exception)
+            catch(Exception msg)
             {
                 error = true;
-                MessageBox.Show("application ran into a error");
+                MessageBox.Show("application ran into a error" + msg);
             }
             finally
             {
@@ -70,7 +89,11 @@ namespace SixthClient
                     this.Close();
             }
         }
-
+        /// <summary>
+        /// event handler: for text change controller: for name validataion
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void RuntimeNameValidation(object sender, EventArgs e)
         {
             bool error = false;
@@ -101,7 +124,11 @@ namespace SixthClient
                     this.Close();
             }
         }
-
+        /// <summary>
+        /// event handler: for text change controller: age validation
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBox_age_TextChanged(object sender, EventArgs e)
         {
             bool error = false;
@@ -133,7 +160,37 @@ namespace SixthClient
                     this.Close();
             }
         }
-
+        /// <summary>
+        /// event handler: for upload button controller: pass the image to ClassInteractingToDB
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button_uploadimg_Click(object sender, EventArgs e)
+        {
+            bool error = false;
+            try
+            {
+                if (openFileDialog_imageUpload.ShowDialog() == DialogResult.OK)
+                {
+                    imageFile = openFileDialog_imageUpload.FileName;
+                }
+            }
+            catch (Exception)
+            {
+                error = true;
+                MessageBox.Show("application ran into an error");
+            }
+            finally
+            {
+                if (error)
+                    this.Close();
+            }
+        }
+        /// <summary>
+        /// event handler: for text change controller: salary validation
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBox_salary_TextChanged(object sender, EventArgs e)
         {
             bool error = false;
@@ -168,7 +225,11 @@ namespace SixthClient
                     this.Close();
             }
         }
-
+        /// <summary>
+        /// event handler: for text change controller: mobile no. validation
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBox_ContactNo_TextChanged(object sender, EventArgs e)
         {
             bool error = false;
@@ -195,7 +256,11 @@ namespace SixthClient
                     this.Close();
             }
         }
-
+        /// <summary>
+        /// event handler: for keypress controller: allows only to enter digits in textbox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBox_KeyPress_NoCharacterAllowed(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))

@@ -9,3 +9,8 @@ C:\Users\sidde\Desktop\SixthClient\obj\Debug\SixthClient.csproj.CoreCompileInput
 C:\Users\sidde\Desktop\SixthClient\obj\Debug\SixthClient.exe
 C:\Users\sidde\Desktop\SixthClient\obj\Debug\SixthClient.pdb
 C:\Users\sidde\Desktop\SixthClient\obj\Debug\SixthClient.EntryForm.resources
+C:\Users\sidde\Desktop\SixthClient\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\sidde\Desktop\SixthClient\bin\Debug\System.IO.Packaging.dll
+C:\Users\sidde\Desktop\SixthClient\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\sidde\Desktop\SixthClient\bin\Debug\System.IO.Packaging.xml
+C:\Users\sidde\Desktop\SixthClient\obj\Debug\SixthClient.csproj.CopyComplete
