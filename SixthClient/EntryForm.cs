@@ -27,11 +27,13 @@ namespace SixthClient
             textBox_name.Clear();
             textBox_salary.Clear();
         }
+        public EntryForm() { }
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="emailid"></param>
         /// <param name="password"></param>
+        /// </summary>
         public EntryForm(string emailid, string password)
         {
             InitializeComponent();
@@ -43,7 +45,7 @@ namespace SixthClient
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void button_submit_Click(object sender, EventArgs e)
+        public void button_submit_Click(object sender, EventArgs e)
         {
             bool error = false;
             try
@@ -89,6 +91,7 @@ namespace SixthClient
                     this.Close();
             }
         }
+
         /// <summary>
         /// event handler: for text change controller: for name validataion
         /// </summary>

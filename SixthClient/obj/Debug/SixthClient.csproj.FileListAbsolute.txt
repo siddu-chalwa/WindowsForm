@@ -14,3 +14,17 @@ C:\Users\sidde\Desktop\SixthClient\bin\Debug\System.IO.Packaging.dll
 C:\Users\sidde\Desktop\SixthClient\bin\Debug\DocumentFormat.OpenXml.xml
 C:\Users\sidde\Desktop\SixthClient\bin\Debug\System.IO.Packaging.xml
 C:\Users\sidde\Desktop\SixthClient\obj\Debug\SixthClient.csproj.CopyComplete
+C:\Users\sidde\Desktop\SixthClient\bin\Debug\xunit.abstractions.dll
+C:\Users\sidde\Desktop\SixthClient\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+C:\Users\sidde\Desktop\SixthClient\bin\Debug\xunit.runner.reporters.net452.dll
+C:\Users\sidde\Desktop\SixthClient\bin\Debug\xunit.runner.utility.net452.dll
+C:\Users\sidde\Desktop\SixthClient\bin\Debug\xunit.assert.dll
+C:\Users\sidde\Desktop\SixthClient\bin\Debug\xunit.core.dll
+C:\Users\sidde\Desktop\SixthClient\bin\Debug\xunit.execution.desktop.dll
+C:\Users\sidde\Desktop\SixthClient\bin\Debug\xunit.assert.xml
+C:\Users\sidde\Desktop\SixthClient\bin\Debug\xunit.core.xml
+C:\Users\sidde\Desktop\SixthClient\bin\Debug\xunit.execution.desktop.xml
+C:\Users\sidde\Desktop\SixthClient\bin\Debug\Validation.dll
+C:\Users\sidde\Desktop\SixthClient\bin\Debug\Xunit.SkippableFact.dll
+C:\Users\sidde\Desktop\SixthClient\bin\Debug\Validation.xml
+C:\Users\sidde\Desktop\SixthClient\bin\Debug\Xunit.SkippableFact.xml

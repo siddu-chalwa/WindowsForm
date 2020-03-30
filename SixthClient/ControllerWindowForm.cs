@@ -14,7 +14,7 @@ namespace SixthClient
         /// </summary>
         private bool[] ErrorForTextbox = new bool[] {false, false, false, false,false};
         private string[] emailid, password;
-        private bool LoginVal = false;
+        private bool LoginVal = false;  
         /// <summary>
         /// Constructor
         /// </summary>
@@ -326,7 +326,7 @@ namespace SixthClient
                 else
                 {
                     int id = new ClassInteractingWithDB().SignupEmailIDValidation(textBox_emailidS.Text);
-                    //
+                    // New User
                     if (0 == id)
                     {
                         label_newUserJoin.Visible = false;
@@ -335,6 +335,7 @@ namespace SixthClient
                         textBox_emaliid.Focus();
                         ClearErrorProviderFunctionS();
                     }
+                    //Account Exist
                     else
                     {
                         label_newUserJoin.Visible = true;
